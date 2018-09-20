@@ -28,7 +28,7 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your hourly age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nr3-S5-wMI" customClass="CustomTextField" customModule="window_shopper" customModuleProvider="target">
-                                <rect key="frame" x="64" y="214" width="247" height="20"/>
+                                <rect key="frame" x="85" y="214" width="205" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="m1c-FK-1r3"/>
                                 </constraints>
@@ -39,15 +39,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Nr3-S5-wMI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="0kI-HR-r6A"/>
                             <constraint firstItem="OgE-aK-yvL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6xk-jw-4vc"/>
                             <constraint firstItem="FsK-OT-cHX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IqJ-iP-o23"/>
                             <constraint firstItem="Nr3-S5-wMI" firstAttribute="top" secondItem="FsK-OT-cHX" secondAttribute="bottom" constant="32" id="Jay-p7-mDQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nr3-S5-wMI" secondAttribute="trailing" constant="64" id="W35-xB-DF9"/>
-                            <constraint firstItem="Nr3-S5-wMI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="loZ-dk-iNR"/>
                             <constraint firstItem="FsK-OT-cHX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="lvZ-h7-EBK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OgE-aK-yvL" secondAttribute="bottom" id="mU0-M1-UJY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nr3-S5-wMI" secondAttribute="trailing" constant="85" id="oQq-AS-Cg5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OgE-aK-yvL" secondAttribute="trailing" id="s5H-4W-EpI"/>
-                            <constraint firstItem="Nr3-S5-wMI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vTT-ic-QUt"/>
                             <constraint firstItem="OgE-aK-yvL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="woc-9e-Jjq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
