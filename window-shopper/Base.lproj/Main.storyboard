@@ -27,30 +27,47 @@
                                     <constraint firstAttribute="width" constant="130" id="yLK-ge-JdO"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your hourly age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nr3-S5-wMI" customClass="CustomTextField" customModule="window_shopper" customModuleProvider="target">
-                                <rect key="frame" x="85" y="214" width="205" height="20"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nr3-S5-wMI" customClass="CustomTextField" customModule="window_shopper" customModuleProvider="target">
+                                <rect key="frame" x="20" y="217" width="335" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="m1c-FK-1r3"/>
+                                    <constraint firstAttribute="height" constant="40" id="m1c-FK-1r3"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QcO-l8-cIo" customClass="CustomTextField" customModule="window_shopper" customModuleProvider="target">
+                                <rect key="frame" x="20" y="282" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="X0p-aV-oDW"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Nr3-S5-wMI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="0kI-HR-r6A"/>
+                            <constraint firstItem="Nr3-S5-wMI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0kI-HR-r6A"/>
                             <constraint firstItem="OgE-aK-yvL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6xk-jw-4vc"/>
                             <constraint firstItem="FsK-OT-cHX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IqJ-iP-o23"/>
-                            <constraint firstItem="Nr3-S5-wMI" firstAttribute="top" secondItem="FsK-OT-cHX" secondAttribute="bottom" constant="32" id="Jay-p7-mDQ"/>
+                            <constraint firstItem="Nr3-S5-wMI" firstAttribute="top" secondItem="FsK-OT-cHX" secondAttribute="bottom" constant="35" id="Jay-p7-mDQ"/>
+                            <constraint firstItem="QcO-l8-cIo" firstAttribute="leading" secondItem="Nr3-S5-wMI" secondAttribute="leading" id="LKK-Yr-eYv"/>
+                            <constraint firstItem="QcO-l8-cIo" firstAttribute="trailing" secondItem="Nr3-S5-wMI" secondAttribute="trailing" id="g1J-W8-rZV"/>
                             <constraint firstItem="FsK-OT-cHX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="lvZ-h7-EBK"/>
+                            <constraint firstItem="QcO-l8-cIo" firstAttribute="height" secondItem="Nr3-S5-wMI" secondAttribute="height" id="mMq-UB-2e4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OgE-aK-yvL" secondAttribute="bottom" id="mU0-M1-UJY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nr3-S5-wMI" secondAttribute="trailing" constant="85" id="oQq-AS-Cg5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nr3-S5-wMI" secondAttribute="trailing" constant="20" id="oQq-AS-Cg5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OgE-aK-yvL" secondAttribute="trailing" id="s5H-4W-EpI"/>
+                            <constraint firstItem="QcO-l8-cIo" firstAttribute="top" secondItem="Nr3-S5-wMI" secondAttribute="bottom" constant="25" id="tdu-Jd-EgH"/>
                             <constraint firstItem="OgE-aK-yvL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="woc-9e-Jjq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hourlyWageTextField" destination="Nr3-S5-wMI" id="IRC-tM-tvZ"/>
+                        <outlet property="priceTextField" destination="QcO-l8-cIo" id="hr0-db-uCN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
