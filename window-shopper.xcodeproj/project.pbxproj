@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		5DE4CCFD21537F82004F2182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE4CCFC21537F82004F2182 /* AppDelegate.swift */; };
-		5DE4CCFF21537F82004F2182 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE4CCFE21537F82004F2182 /* ViewController.swift */; };
+		5DE4CCFF21537F82004F2182 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE4CCFE21537F82004F2182 /* MainViewController.swift */; };
 		5DE4CD0221537F82004F2182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE4CD0021537F82004F2182 /* Main.storyboard */; };
 		5DE4CD0421537F83004F2182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DE4CD0321537F83004F2182 /* Assets.xcassets */; };
 		5DE4CD0721537F83004F2182 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE4CD0521537F83004F2182 /* LaunchScreen.storyboard */; };
+		5DE4CD1121538227004F2182 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE4CD1021538227004F2182 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5DE4CCF921537F82004F2182 /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DE4CCFC21537F82004F2182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5DE4CCFE21537F82004F2182 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5DE4CCFE21537F82004F2182 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5DE4CD0121537F82004F2182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DE4CD0321537F83004F2182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DE4CD0621537F83004F2182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DE4CD0821537F83004F2182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DE4CD1021538227004F2182 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		5DE4CCFB21537F82004F2182 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				5DE4CD0F215381FB004F2182 /* Views */,
+				5DE4CD0E21538108004F2182 /* Controller */,
 				5DE4CCFC21537F82004F2182 /* AppDelegate.swift */,
-				5DE4CCFE21537F82004F2182 /* ViewController.swift */,
 				5DE4CD0021537F82004F2182 /* Main.storyboard */,
 				5DE4CD0321537F83004F2182 /* Assets.xcassets */,
 				5DE4CD0521537F83004F2182 /* LaunchScreen.storyboard */,
 				5DE4CD0821537F83004F2182 /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		5DE4CD0E21538108004F2182 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5DE4CCFE21537F82004F2182 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5DE4CD0F215381FB004F2182 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5DE4CD1021538227004F2182 /* CustomTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DE4CCFF21537F82004F2182 /* ViewController.swift in Sources */,
+				5DE4CCFF21537F82004F2182 /* MainViewController.swift in Sources */,
 				5DE4CCFD21537F82004F2182 /* AppDelegate.swift in Sources */,
+				5DE4CD1121538227004F2182 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
